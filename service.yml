@@ -1,0 +1,79 @@
+apiVersion: apps/v1
+kind: Service
+metadata:
+  name: my-service  # Name of the Service
+  namespace: default  # Namespace where the Service is created  
+spec:
+  selector:
+    app: my-app  # Label selector to identify the pods targeted by this Service
+  ports:
+  - protocol: TCP  # Protocol used by the Service
+    port: 80  # Port exposed by the Service
+    targetPort: 80  # Port on the pod that the Service forwards traffic to
+  type: ClusterIP  # Type of Service (ClusterIP, NodePort, LoadBalancer, etc.)  
+# This Service will route traffic to the pods with the label "app: my-app"
+# and expose port 80. The Service acts as a stable endpoint for accessing the pods, regardless of their individual IP addresses.  
+# The ClusterIP type means the Service is only accessible within the cluster.
+# If you want to expose the Service outside the cluster, you can change the type to NodePort or LoadBalancer.
+
+#NodePort example:
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: my-service
+#   namespace: default
+# spec:
+#   selector:
+#     app: my-app
+#   ports:
+#   - protocol: TCP
+#     port: 80
+#     targetPort: 80
+#   type: NodePort
+
+# LoadBalancer example:
+# apiVersion: v1 
+# kind: Service
+# metadata:
+#   name: my-service
+#   namespace: default
+# spec:
+#   selector:   
+#     app: my-app
+#   ports:
+#   - protocol: TCP
+#     port: 80
+#     targetPort: 80
+#   type: LoadBalancer  
+
+#Headless Service example:
+# apiVersion: v1  
+# kind: Service
+# metadata:
+#   name: my-service
+#   namespace: default  
+# spec:
+#   clusterIP: None  # This makes the Service headless, allowing direct access to the pods
+#   selector:
+#     app: my-app 
+#   ports:
+#   - protocol: TCP 
+#     port: 80
+#     targetPort: 80  
+
+#   clusterIP: None  # This makes the Service headless, allowing direct access to the pods
+#   # A headless Service does not have a ClusterIP and allows direct access to the pods.  
+#   # This is useful for stateful applications or when you want to manage the pods directly.
+#   # In this case, the Service will not load balance traffic and will return the individual pod IPs. 
+#   # Clients can connect directly to the pods using their IP addresses.
+#   # This is useful for applications that require direct access to individual pods, such as databases or stateful applications.
+
+#   # Note: When using a headless Service, you may need to handle service discovery and load balancing at the application level.
+#   # Clients can use the DNS names of the pods to access them directly.
+#   # Example of accessing a pod directly using its DNS name:
+#   # my-pod-0.my-service.default.svc.cluster.local  
+#   # This will resolve to the IP address of the pod named "my-pod-0" in the "default" namespace.
+#   # You can also use the pod's IP address directly if you know it.  
+#   # Example of accessing a pod directly using its IP address:
+#   # http://<pod-ip>:80  
+#   # This will connect directly to the pod's IP address on port 80.

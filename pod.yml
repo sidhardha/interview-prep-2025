@@ -1,0 +1,44 @@
+# blue deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: blue-deployment
+  namespace: default  # Namespace where the deployment is created
+spec:       
+  replicas: 3  # Number of desired pods
+  selector:
+    matchLabels:
+      app: blue-app  # Label selector to identify the pods managed by this deployment
+  template:
+    metadata:
+      labels:
+        app: blue-app  # Labels for the pod template
+    spec:
+      securityContext:
+        seccompProfile:
+          type: RuntimeDefault
+        runAsUser: 1000
+        runAsGroup: 1001
+        runAsNonRoot: true
+      containers:
+      - name: blue-container  # Name of the container
+        image: nginx:latest  # Container image to use
+        ports:
+        - containerPort: 80  # Port exposed by the container
+        securityContext:
+          allowPrivilegeEscalation: false
+          privileged: false
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 80
+          initialDelaySeconds: 5
+          periodSeconds: 10
+          failureThreshold: 3
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 80
+          initialDelaySeconds: 10
+          periodSeconds: 20
+          failureThreshold: 3

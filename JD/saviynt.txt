@@ -1,0 +1,109 @@
+Sr. Engineer, CloudOps
+Saviynt is an identity authority platform built to power and protect the world at work. In a world of digital transformation, where organizations are faced with increasing cyber risk but cannot afford defensive measures to slow down progress, Saviynt’s Enterprise Identity Cloud gives customers unparalleled visibility, control and intelligence to better defend against threats while empowering users with right-time, right-level access to the
+digital technologies and tools they need to do their best work.
+This position will play a key role in developing, deploying, maintaining, and operating Saviynt solution in alignment with Federal compliance standards and platform capabilities. Your expertise will contribute to maintain and operate identity access management solutions using Saviynt’s EIC platform, meeting compliance and quality. Strong cloud infrastructure and system administration management experience is expected. The responsibility also includes triage and resolving technical issues through debugging, research, and investigation.
+
+WHAT YOU WILL BE DOING
+ Perform customer deployments, migrations, and upgrades in the cloud
+environment.
+ Installing and configuring Saviynt product(s) following installation procedure and
+organizational guidelines
+ Troubleshooting and resolving incidents while collaborating with the development
+and IT teams to minimize downtime and maintain service quality
+ Manage and maintain cloud infrastructure on platforms such as AWS, Azure, or
+Google Cloud. Monitor cloud resources to ensure availability and scalability.
+ Automate any manual work being performed pre/during/post deployments. 
+ Troubleshoot cloud-related infrastructure incidents and issues.
+ Develop and maintain CI/CD pipelines to ensure reliable and efficient software
+delivery. Monitor and troubleshoot issues within the CI/CD pipelines.
+ Automate infrastructure setup and maintenance using Infrastructure as Code
+(IaC) tools.
+ Collaborate with development, operations, and QA teams to improve deployment
+processes.
+ Maintain compliance with security and quality standards throughout the CI/CD
+pipeline
+ Creating and maintaining technical documents for cloud infrastructure and
+related processes.
+ Design and implement novel solutions to automate cloud-environment
+provisioning.
+ Developing automation solutions to streamline processes, such as creating
+scripts to run specific tasks on systems. Developing and implementing
+automation scripts to reduce repetitive tasks and eliminate human error.
+ Configuring and deploying monitoring tools
+
+WHAT YOU BRING
+ Master’s Degree in an Engineering discipline, or a bachelor’s degree and 7+
+years of professional software engineering experience
+--------------------------------------------------------------------------------------------
+
+Interview Preparation : 
+
+ Strong Domain knowledge in Identity and Access Management (IAM) - Done
+
+ Experience building, scaling &amp; monitoring infrastructure needed for SaaS based application and services
+
+ 7 years supporting AWS/Azure environments and native services
+
+ 7 years working within Linux (e.g., Red Hat, CentOS) environments
+
+ 5 years supporting Network Integration using cloud native services
+
+ 5 years working within a DevOps or CI/CD environment
+
+ Strong knowledge of CI/CD tools (e.g., Jenkins, GitLab CI, Travis CI)
+
+ Experience with version control systems (e.g., Git)
+
+ 5 years working experience with containerization technologies (e.g., Docker,
+Kubernetes)
+
+ 5 years scripting (preferred languages Python, Java, or BASH)
+
+ Expertise in infrastructure as code (e.g., cloud formation, ARM, Terraform,
+Ansible, Chef, Puppet)
+
+ Experience with configuring, deploying, and operating public cloud services (e.g.Azure, AWS)
+
+ Experience with network features, e.g., cloud network topology, BGP, routing,
+web (REST) APIs
+
+ Database: Extensive experience in database operations &amp; MySQL
+
+ Experience in invoking REST/SOAP web services using tools such as Postman.
+
+ 5 years of experience in identity and access management with a focus on
+Federal compliance.
+
+ Strong understanding of cybersecurity principles and best practices.
+
+Topics Sequence and timelines:
+------------------------------
+
+1) Identity and Access Management (IAM), GIT - Done
+
+2) Azure Interview Preparation : AZ 104, AZ networking ( Azure Networking interview questions,cloud network topology, BGP, routing,web (REST) APIs,Network Integration using cloud native services). AZ 400, Azure cli and Azure Powershell) 
+
+3) Linux  Administration, Bash Scripting and DevSecOps Cheat street
+
+4) Terraform & Puppet.
+
+5) CloudOps Monitoring etc.
+
+6) Experience in invoking REST/SOAP web services using tools such as Postman.
+
+7) Extensive experience in database operations &amp; MySQL
+
+8) DevSecOps Interview Question.
+
+9) Work experiance Overview. 
+
+10) Python Development.
+
+11) Docker & Kubernetes. 
+
+--------------------------------
+
+Round #1: Cleared.
+
+Round #2: 10th June(Tuesday) - 4 PM 
+
