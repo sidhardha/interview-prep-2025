@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment  # Deployment is a higher-level abstraction than ReplicaSet
+metadata:
+  name: my-deployment  # Name of the Deployment
+  namespace: default  # Namespace where the Deployment is created
+spec:
+  replicas: 3  # Number of desired pod replicas
+  selector:
+    matchLabels:
+      app: my-app  # Label selector for pods
+  template:
+    metadata:
+      labels:
+        app: my-app  # Labels for the pod template
+    spec:
+      containers:
+      - name: my-container
+        image: my-image:latest
+        ports:
+        - containerPort: 80  # Port exposed by the container
+      # Add any additional configuration for the container here 
+      # such as environment variables, volume mounts, etc.
+      # Example of adding an environment variable
+      env:
+      - name: MY_ENV_VAR
+        value: my-value # Example of adding a volume mount
+      volumeMounts:
+      - name: my-volume
+        mountPath: /data
+  volumes:
+  - name: my-volume
+    emptyDir: {} # Example of a volume definition
+# This Deployment will manage the specified number of pod replicas  
+# and ensure they are running with the specified container image and configuration.
+# It provides features like rolling updates, scaling, and self-healing. 
+# The Deployment controller will automatically create and manage the underlying ReplicaSets.
+# This allows for easier management of application updates and scaling.
+# The Deployment will ensure that the desired state is maintained,
+# automatically creating or deleting pods as necessary to match the specified number of replicas.
+# The Deployment controller will also handle rolling updates, allowing you to update the application
+# without downtime by gradually replacing old pods with new ones. 

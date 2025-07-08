@@ -107,3 +107,38 @@ Round #1: Cleared.
 
 Round #2: 10th June(Tuesday) - 4 PM 
 
+-------------------------------------
+
+ Python and Scripting/Linux, Hybrid Cloud,Azure Networking,Azure Security, Kubernetes with Helm. 
+
+ Python and Scripting/Linux,Hybrid Cloud,Azure Networking,Azure Security, Kubernetes with Helm. 
+
+ Python and Scripting/Linux,Terraform,Azure Networking, Kubernetes with Helm. 
+
+ Python and Scripting/Linux, Terraform Azure 204, AKS, Kubernetes with Helm. 
+
+ -------------------------------------
+
+20 hours of Preparation:
+
+1) Kubernetes with Helm and AKS including Docker. 
+
+2) Linux, Bash Scripting 
+
+3) Terraform 
+
+4) Cloud Migrations, Cloud Networking, Hybrid Networking,
+
+5) CloudOps Monitoring
+
+6) Experience in invoking REST/SOAP web services using tools such as Postman.
+
+
+
+
+
+
+
+
+
+

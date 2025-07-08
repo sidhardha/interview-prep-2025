@@ -141,6 +141,32 @@
 
 ---
 
+## CodeRabbit vs Bitbucket Cloud AI PR Review (Beta): Tool & Maturity Comparison
+
+| Feature Area  | CodeRabbit (Enterprise-Ready)                                                                                                                                         | Bitbucket Cloud AI PR Review (Beta)                                                                                   |
+|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| **Security**  | Mature controls: OAuth 2.0, granular repo access, AES-256 at rest, TLS in transit, SSO/SAML, regular third-party assessments, strong audit logging, sensitive data masked and not used for model training unless opted in. 
+
+| Early-stage: Leverages Atlassian platform security (OAuth, SSO, encrypted comms), but AI review features are new and may lack full enterprise controls or granular auditability. Data handling for AI is evolving. |
+| **Maturity**  | Production-ready, supports multiple VCS platforms, robust Bitbucket/GitHub integration, proven in enterprise, customizable rules, broad language/framework support, established support. |
+
+ Beta: Limited to Bitbucket Cloud, evolving feature set, may lack advanced customization, language support, or integration depth. Not yet validated at scale. |
+| **Governance**| Strong: SSO/SAML, RBAC, audit trails, compliance reporting, admin control over access scopes, review logs, org-wide policy enforcement.                                
+
+ | Basic: Tied to Bitbucket's native controls; AI review governance is limited, with basic auditability and policy enforcement. Enterprise controls expected to improve. |
+
+| **Compliance**| GDPR-compliant, SOC 2 controls, regular pen testing, user data rights (deletion/export), data residency options for enterprise.                                        
+  Inherits Atlassian's compliance (GDPR, SOC 2), but AI-specific compliance (data retention, model training, auditability) is still maturing. Review before use in regulated environments. |
+
+**Summary:**
+- **CodeRabbit**: Mature, enterprise-ready AI code review tool with strong security, governance, and compliance. Suitable for organizations with strict requirements.
+- **Bitbucket Cloud AI PR Review (Beta)**: Promising, but early-stage. Benefits from Atlassian's platform security, but lacks CodeRabbit's depth, auditability, and enterprise controls. Best for early adopters and non-critical use until it matures.
+
+**Recommendation:**
+For regulated industries or organizations prioritizing security and compliance, CodeRabbit is the safer choice. Monitor Bitbucket's AI PR Review as it evolves for future adoption.
+
+---
+
 ## References
 - [CodeRabbit Documentation](https://coderabbit.ai/docs)
 - [Bitbucket OAuth Guide](https://developer.atlassian.com/cloud/bitbucket/oauth-2/)
@@ -150,3 +176,12 @@
 - [SOC 2 Overview](https://www.aicpa.org/resources/article/soc-2-report)
 
 ---
+
+- **Migrate existing On-Premises infrastructure services to cloud-based solutions.**
+  - This involves moving servers, applications, databases, and other IT resources from traditional on-premises data centers to cloud platforms such as Azure, AWS, or GCP. The migration process typically includes:
+    - **Discovery & Assessment:** Inventory all on-premises assets, analyze dependencies, and assess cloud readiness using tools like Azure Migrate or AWS Application Discovery Service.
+    - **Migration Strategy:** Choose the right approach—lift-and-shift (rehost), replatform, or refactor for cloud-native services. Example: Rehost a legacy Windows Server VM to Azure IaaS, or refactor a monolithic app to use Azure App Service and managed databases.
+    - **Migration Execution:** Use migration tools to move VMs, databases, and workloads to the cloud. Example: Use Azure Migrate to replicate and cut over VMs, or Database Migration Service to move SQL Server to Azure SQL Database.
+    - **Validation & Optimization:** Test workloads post-migration, optimize for performance, security, and cost, and decommission on-premises resources once migration is complete.
+    - **Benefits:** Cloud migration enables scalability, high availability, disaster recovery, and access to modern cloud services, while reducing on-premises maintenance overhead.
+  - **Tip:** Always plan for security, compliance, and business continuity during migration, and consider modernizing workloads to leverage cloud-native features for long-term value.
